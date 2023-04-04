@@ -5,6 +5,10 @@
 	curl --location 'http://localhost:8080/api/excel/uploadExcel' \
 	--header 'Content-Type: multipart/form-data; ' \
 	--form 'file=@"/home/root310/Downloads/sample-excel-demo.xlsx"'
+	
+	curl --location --request GET 'http://localhost:8080/api/excel/downloadExcel' \
+	--header 'Content-Type: multipart/form-data; ' \
+	--form 'file=@"/home/root310/Downloads/Logical Reasoning - Beginner.xlsx"'
 </div>
 
 
